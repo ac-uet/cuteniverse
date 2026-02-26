@@ -420,10 +420,9 @@ function decodeBase64Unicode(_0x3782b7) {
 }
 function getHeartImages() {
     const heartImages = [
-            //   "https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/522923062_1314275174037014_1655612755893775168_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cEVC8m3EbgYQ7kNvwHlRRjN&_nc_oc=AdlOrFGRtRKP8jWSCdDVIDinYD9BHs8o39q5CqUbmhRvyYXOwGuFxBfLobWzviLDEU6FSGk3gpGFOGSq13A2zqKi&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=8yT7v29Dj4UYWeL_yKxUmA&oh=00_AfXZigVWwTjQopIXUqAqFqZ-lSX2PL2HE0lYqRnfpTO0MQ&oe=68A1E6BE",
-            //   "https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/516196418_1298974372233761_8129683338395305180_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=l2Ls9dZfJj0Q7kNvwGJlvNz&_nc_oc=AdlVdpThMZcuhdft0eZ4SQih6v18NHCjWrv24t0NaPKdQhp6TymHilUz2o2sr6YwoBNA9sI2WqqnZyFQugwvcEHo&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&_nc_gid=3t1rtz6oYuxqUmkNvSysZg&oh=00_AfXDGe-w9QIRQYUokE_sFtO7EEQcnS6fvSbssmpIxKF1hw&oe=68A1F2FB",
-            //   "https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/489886439_1226865176111348_3306985732145591653_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=w618gWDuIywQ7kNvwFSqJre&_nc_oc=Admhf5II4TbNnN2qWwy2DJ1ultbZF51eUXLa5T2cZslm9dKEjPV79Xyk-PLz6lgNLl_QSGkrMCLn1TnaL5qbmFym&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&_nc_gid=sKdpQCV_B1s-FeZxbMizAg&oh=00_AfUPpv3o-vK19nWcEH1D24cJuPBat4M6JUKf0Ld82Rb8uQ&oe=68A1CF9F",
-              "https://cdn-learn.adafruit.com/assets/assets/000/120/180/medium800/circuitpython_sample-nyan-pyportal.gif?1681239809",
+            "https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/522923062_1314275174037014_1655612755893775168_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cEVC8m3EbgYQ7kNvwHlRRjN&_nc_oc=AdlOrFGRtRKP8jWSCdDVIDinYD9BHs8o39q5CqUbmhRvyYXOwGuFxBfLobWzviLDEU6FSGk3gpGFOGSq13A2zqKi&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=8yT7v29Dj4UYWeL_yKxUmA&oh=00_AfXZigVWwTjQopIXUqAqFqZ-lSX2PL2HE0lYqRnfpTO0MQ&oe=68A1E6BE",
+            "https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/516196418_1298974372233761_8129683338395305180_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=l2Ls9dZfJj0Q7kNvwGJlvNz&_nc_oc=AdlVdpThMZcuhdft0eZ4SQih6v18NHCjWrv24t0NaPKdQhp6TymHilUz2o2sr6YwoBNA9sI2WqqnZyFQugwvcEHo&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&_nc_gid=3t1rtz6oYuxqUmkNvSysZg&oh=00_AfXDGe-w9QIRQYUokE_sFtO7EEQcnS6fvSbssmpIxKF1hw&oe=68A1F2FB",
+            "https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/489886439_1226865176111348_3306985732145591653_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=w618gWDuIywQ7kNvwFSqJre&_nc_oc=Admhf5II4TbNnN2qWwy2DJ1ultbZF51eUXLa5T2cZslm9dKEjPV79Xyk-PLz6lgNLl_QSGkrMCLn1TnaL5qbmFym&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&_nc_gid=sKdpQCV_B1s-FeZxbMizAg&oh=00_AfUPpv3o-vK19nWcEH1D24cJuPBat4M6JUKf0Ld82Rb8uQ&oe=68A1CF9F",
             ]
     return heartImages;
 }
@@ -1676,3 +1675,4 @@ window[_0x1ab46f(0x176)]("DOMContentLoaded", checkOrientation),
   window[_0x1ab46f(0x176)]("orientationchange", () => {
     setTimeout(checkOrientation, 0xc8);
   });
+
