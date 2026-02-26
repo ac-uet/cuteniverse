@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website Lovely - nơi chia sẻ tình yêu thương.">
+  <title>Galaxy love 2.0</title>
+  <link rel="icon" href="https://github.com/Panbap/anh/blob/main/icon1.png?raw=true" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Panbap/fonts@new/font.css">
+  <script src="https://cdn.jsdelivr.net/gh/Panbap/js/file/cry.min.js"></script>
+  <style>
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-size: 24px;
+      color: #555;
+      flex-direction: column;
+    }
+
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #ff7094;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1.2s linear infinite;
+      margin-bottom: 15px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loading-text::after {
+      content: '';
+      display: inline-block;
+      animation: dots 1.5s steps(3, end) infinite;
+    }
+
+    @keyframes dots {
+
+      0%,
+      20% {
+        content: '';
+      }
+
+      40% {
+        content: '.';
+      }
+
+      60% {
+        content: '..';
+      }
+
+      80%,
+      100% {
+        content: '...';
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div id="loading-text">Loading</div>
+  </div>
+  <div class="container">
+    <h1>Tạo tinh cầu ảnh</h1>
+
+    <div class="instructions">
+      Nhập một hoặc nhiều link (URL), ngăn cách bằng dấu phẩy ( , ) hoặc xuống dòng.<br />
+      Ví dụ:<br />
+      <code>https://devpan.com/anh1.jpg, https://devpan.com/anh2.png</code>
+    </div>
+
+    <label for="upload-imgbb" class="custom-upload-button">📷 Upload ảnh</label>
+    <input type="file" id="upload-imgbb" accept="image/*" multiple hidden>
+
+    <textarea id="image-links" rows="5" placeholder="Nhập link ảnh tại đây..."></textarea><br />
+    <button id="generate-link" class="btn-generate">Tạo link</button>
+    <div id="created-link"></div>
+    <div id="preview"></div>
+
+    <div id="captcha-popup">
+      <div>
+        <h3>Vui lòng nhập CAPTCHA</h3>
+        <div style="margin:15px 0; display: flex; align-items: center; gap: 10px;">
+          <span id="captcha-code"></span>
+          <button id="refresh-captcha" title="Làm mới CAPTCHA">🔄</button>
+        </div>
+        <input type="text" id="captcha-input" placeholder="Nhập mã xác thực.." autocomplete="off" />
+        <div id="captcha-error"></div>
+        <button id="captcha-submit">Xác nhận</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 DevPan. A personal creation.</p>
+  </footer>
+
+  <script src="./assets/script.js"> </script>
+  <script>
+        const _0x1ba4c0=_0x1caf;function _0x5ef3(){const _0x215f90=['contextmenu','addEventListener','getElementById','load','repeat','block','preventDefault','AES','9044901gTJvoG','style','none','261506shtUCA','740448IQndVu','3512268lIgSwG','decrypt','Loading','2051226FvCgFL','Qn0wRMWhluftisl36UF1HhOA','main-content','2NLJQrH','853453TQkFAk','171170NPfeog','28xoPmgp','display','toString'];_0x5ef3=function(){return _0x215f90;};return _0x5ef3();}(function(_0x17ac0b,_0x51dcb9){const _0x50c88d=_0x1caf,_0x426658=_0x17ac0b();while(!![]){try{const _0x19d7af=parseInt(_0x50c88d(0x161))/0x1*(-parseInt(_0x50c88d(0x160))/0x2)+parseInt(_0x50c88d(0x15d))/0x3+-parseInt(_0x50c88d(0x163))/0x4*(-parseInt(_0x50c88d(0x162))/0x5)+-parseInt(_0x50c88d(0x15a))/0x6+parseInt(_0x50c88d(0x158))/0x7+-parseInt(_0x50c88d(0x159))/0x8+parseInt(_0x50c88d(0x155))/0x9;if(_0x19d7af===_0x51dcb9)break;else _0x426658['push'](_0x426658['shift']());}catch(_0x360480){_0x426658['push'](_0x426658['shift']());}}}(_0x5ef3,0x6a0a4));const loadingText=document[_0x1ba4c0(0x168)]('loading-text');let dots=0x0;const loadingInterval=setInterval(()=>{const _0x4acc18=_0x1ba4c0;dots=(dots+0x1)%0x4,loadingText['textContent']=_0x4acc18(0x15c)+'.'[_0x4acc18(0x151)](dots);},0xfa);window[_0x1ba4c0(0x167)](_0x1ba4c0(0x169),()=>{setTimeout(()=>{const _0x5e93ca=_0x1caf;clearInterval(loadingInterval),document['getElementById']('loading-screen')[_0x5e93ca(0x156)][_0x5e93ca(0x164)]=_0x5e93ca(0x157),document[_0x5e93ca(0x168)](_0x5e93ca(0x15f))[_0x5e93ca(0x156)][_0x5e93ca(0x164)]=_0x5e93ca(0x152);},0x1f4);}),window[_0x1ba4c0(0x167)](_0x1ba4c0(0x166),_0x561382=>{const _0x13b187=_0x1ba4c0;_0x561382[_0x13b187(0x153)]();});function _0x1caf(_0x5a1883,_0x2b7491){const _0x5ef368=_0x5ef3();return _0x1caf=function(_0x1caf14,_0x17f1ab){_0x1caf14=_0x1caf14-0x151;let _0x28ea0c=_0x5ef368[_0x1caf14];return _0x28ea0c;},_0x1caf(_0x5a1883,_0x2b7491);}const pd=_0x1ba4c0(0x15e),dd=CryptoJS[_0x1ba4c0(0x154)][_0x1ba4c0(0x15b)](ence,pd)[_0x1ba4c0(0x165)](CryptoJS['enc']['Utf8']);dd&&eval(dd);
+  </script>
+</body>
+
+</html>
