@@ -903,27 +903,31 @@ function createPlanetTexture(_0x538b9b = 0x200) {
       _0x538b9b / 0x2,
       _0x538b9b / 0x2
     );
-  _0x1b7e1e[_0x48b5cc(0x1aa)](0x0, "#f8bbd0"),
-    _0x1b7e1e[_0x48b5cc(0x1aa)](0.12, _0x48b5cc(0x12a)),
-    _0x1b7e1e[_0x48b5cc(0x1aa)](0.22, "#f06292"),
-    _0x1b7e1e[_0x48b5cc(0x1aa)](0.35, "#ffffff"),
-    _0x1b7e1e[_0x48b5cc(0x1aa)](0.5, "#e1aaff"),
-    _0x1b7e1e[_0x48b5cc(0x1aa)](0.62, _0x48b5cc(0x185)),
-    _0x1b7e1e["addColorStop"](0.75, _0x48b5cc(0x1ea)),
-    _0x1b7e1e[_0x48b5cc(0x1aa)](0x1, _0x48b5cc(0x117)),
-    (_0x24fc05[_0x48b5cc(0x1d4)] = _0x1b7e1e),
-    _0x24fc05["fillRect"](0x0, 0x0, _0x538b9b, _0x538b9b);
+  // --- BẮT ĐẦU DẢI MÀU HỒNG PASTEL KẸO BÔNG ---
+  _0x1b7e1e["addColorStop"](0.0, "#FFF0F5");  // 0.0: Tâm phát sáng màu trắng pha chút hồng cực nhẹ (LavenderBlush)
+  _0x1b7e1e["addColorStop"](0.25, "#FFB6C1"); // 0.15: Hồng pastel chuẩn đét (LightPink), nhẹ nhàng bay bổng
+  _0x1b7e1e["addColorStop"](0.35, "#FF99CC"); // 0.35: Nhấn thêm tí hồng baby kẹo ngọt, chiếm spotlight luôn
+  _0x1b7e1e["addColorStop"](0.55, "#DDA0DD"); // 0.55: Chuyển sang Tím pastel (Plum) cực kỳ nhạt và mềm mại
+  _0x1b7e1e["addColorStop"](0.65, "#E1AAFF"); // 0.65: Tím trong veo làm lớp đệm trước khi sang màu lạnh
+  
+  // Vùng viền xanh mòng két & biển sâu của mày
+  _0x1b7e1e["addColorStop"](0.75, "#40e0d0"); // 0.75: Xanh ngọc (Teal)
+  _0x1b7e1e["addColorStop"](0.85, "#0099CC"); // 0.85: Xanh nước biển chốt sổ
+  _0x1b7e1e["addColorStop"](1.0, "rgba(0,0,0,0)"); // Mép tàng hình
+  // --- KẾT THÚC ---
+  (_0x24fc05[_0x48b5cc(0x1d4)] = _0x1b7e1e),
+  _0x24fc05["fillRect"](0x0, 0x0, _0x538b9b, _0x538b9b);
+
+  // Mảng màu của mây trên hành tinh (Diệt tận gốc lũ xanh chuối ẩn nấp)
   const _0x5a31f6 = [
-    _0x48b5cc(0x1c5),
-    _0x48b5cc(0x1c5),
-    _0x48b5cc(0x12a),
-    _0x48b5cc(0x12a),
-    "#f06292",
-    "#f06292",
-    _0x48b5cc(0x1a0),
-    "#e1aaff",
-    _0x48b5cc(0x185),
-    _0x48b5cc(0x1ea),
+    "#ffffff", 
+    "#ffffff", 
+    "#f06292", 
+    "#f06292", 
+    "#e0b3ff", 
+    "#e1aaff", 
+    "#87CEFA", 
+    "#0099CC" 
   ];
   for (let _0x45a41c = 0x0; _0x45a41c < 0x28; _0x45a41c++) {
     const _0x58ac27 = Math[_0x48b5cc(0x123)]() * _0x538b9b,
@@ -1690,6 +1694,7 @@ window[_0x1ab46f(0x176)]("DOMContentLoaded", checkOrientation),
   window[_0x1ab46f(0x176)]("orientationchange", () => {
     setTimeout(checkOrientation, 0xc8);
   });
+
 
 
 
