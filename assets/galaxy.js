@@ -389,7 +389,7 @@ const galaxyParameters = {
   randomness: 0.2,
   randomnessPower: 0x14,
   insideColor: new _0x9dc5f4[_0x1ab46f(0x1fa)](0xd63ed6),
-  outsideColor: new _0x9dc5f4[_0x1ab46f(0x1fa)](0x48b8b8),
+  outsideColor: new _0x9dc5f4[_0x1ab46f(0x1fa)](0x0077be),
 };
 function _0x3640(_0x24fc53, _0x104470) {
   const _0xf3919 = _0xf391();
@@ -1690,5 +1690,6 @@ window[_0x1ab46f(0x176)]("DOMContentLoaded", checkOrientation),
   window[_0x1ab46f(0x176)]("orientationchange", () => {
     setTimeout(checkOrientation, 0xc8);
   });
+
 
 
