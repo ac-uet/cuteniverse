@@ -292,7 +292,7 @@ function _0xf391() {
     "getPoint",
     "rollPhase",
     "update",
-    "ACUET",
+    "CUTENIVERSE",
     "Chạm\x20Vào\x20Tinh\x20Cầu",
     "RepeatWrapping",
     "16GsjLzL",
@@ -1694,6 +1694,7 @@ window[_0x1ab46f(0x176)]("DOMContentLoaded", checkOrientation),
   window[_0x1ab46f(0x176)]("orientationchange", () => {
     setTimeout(checkOrientation, 0xc8);
   });
+
 
 
 
