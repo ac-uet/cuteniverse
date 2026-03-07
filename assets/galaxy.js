@@ -207,7 +207,7 @@ function _0xf391() {
     "DoubleSide",
     "arcTo",
     "randomness",
-    "#b2ff59",
+    "#0099cc",
     "geometry",
     "rgba(180,\x20120,\x20200,\x20",
     "2wTQzSk",
@@ -1690,6 +1690,7 @@ window[_0x1ab46f(0x176)]("DOMContentLoaded", checkOrientation),
   window[_0x1ab46f(0x176)]("orientationchange", () => {
     setTimeout(checkOrientation, 0xc8);
   });
+
 
 
 
